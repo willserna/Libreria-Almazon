@@ -666,7 +666,7 @@
         
         
         
-        <!--
+
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-assembly-plugin</artifactId>
@@ -680,7 +680,7 @@
                             </goals>
                             <configuration>
                                 <appendAssemblyId>false</appendAssemblyId>
-                                <descriptor>src/main/assembly/amp.xml</descriptor>
+                                <descriptors>src/main/assembly/amp.xml</descriptors>
                             </configuration>
                         </execution>
                     </executions>
@@ -692,7 +692,7 @@
                         </dependency>
                     </dependencies>
                 </plugin>
-                -->
+
                                                         
         
         
