@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Definition of new Model -->
+<model name="al:almazonmodel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+    <!-- Optional meta-data about the model -->
+    <description>Almazon Model</description>
+    <author>William Serna</author>
+    <version>1.0</version>
+
+    <!-- Imports are required to allow references to definitions in other models -->
+    <imports>
+        <!-- Import Alfresco Dictionary Definitions -->
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d" />
+        <!-- Import Alfresco Content Domain Model Definitions -->
+        <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm" />
+    </imports>
+
+    <!-- Introduction of new namespaces defined by this model -->
+    <namespaces>
+        <namespace uri="http://www.almazon.com/model/content/1.0" prefix="al" />
+    </namespaces>
+    <!--<constraints>
+        <constraint name="al:campaignList" type="LIST">
+            <parameter name="allowedValues">
+                <list>
+                    <value>Application Syndication</value>
+                    <value>Private Event Retailing</value>
+                    <value>Social Shopping</value>
+                </list>
+            </parameter>
+        </constraint>
+    </constraints>-->
+
+    <types>
+        <!-- Enterprise-wide generic document type -->
+        <type name="al:doc">
+            <title>Almazon Book</title>
+            <parent>cm:content</parent>
+            <associations>
+                <association name="al:relatedDocuments">
+                    <title>Related Documents</title>
+                    <source>
+                        <mandatory>false</mandatory>
+                        <many>true</many>
+                    </source>
+                    <target>
+                        <class>al:doc</class>
+                        <mandatory>false</mandatory>
+                        <many>true</many>
+                    </target>
+                </association>
+            </associations>
+            <mandatory-aspects>
+                <aspect>cm:generalclassifiable</aspect>
+            </mandatory-aspects>
+        </type>
+
+
+
+    </types>
+
+    <aspects>
+        <aspect name="al:webable">
+            <title>Almazon Webable</title>
+            <properties>
+                <property name="al:published">
+                    <type>d:date</type>
+                </property>
+                <property name="al:archived">
+                    <type>d:date</type>
+                </property>
+                <property name="al:isActive">
+                    <type>d:boolean</type>
+                    <default>false</default>
+                </property>
+            </properties>
+        </aspect>
+
+        <aspect name="al:productRelated">
+            <title>Almazon Book Metadata</title>
+            <properties>
+                <property name="al:product">
+                    <type>d:text</type>
+                    <mandatory>true</mandatory>
+                    <multiple>true</multiple>
+                </property>
+                <property name="al:version">
+                    <type>d:text</type>
+                    <mandatory>true</mandatory>
+                    <multiple>true</multiple>
+                </property>
+            </properties>
+        </aspect>
+    </aspects>
+</model>
