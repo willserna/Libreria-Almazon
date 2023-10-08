@@ -38,7 +38,7 @@
    <@script src="${url.context}/res/modules/form/control-wrapper.js" group="rules"/>
    <@script src="${url.context}/res/components/common/common-component-style-filter-chain.js" group="rules"/>
    <!--Custom javascript file include for edit mode -->
-   <@script type="text/javascript" src="${url.context}/res/components/someco/rules/config/rule-config-action-custom.js" group="rules_custom"></@script>
+   <@script type="text/javascript" src="techtest-share/src/main/resources/META-INF/resources/components.almazon.rules.config/rule-config-action-custom.js" group="rules_custom"></@script>
 </@>
 
 <@markup id="widgets">

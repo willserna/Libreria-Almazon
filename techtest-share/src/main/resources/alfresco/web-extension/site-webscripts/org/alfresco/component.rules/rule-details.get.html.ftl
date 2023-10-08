@@ -15,7 +15,7 @@
    <@script src="${url.context}/res/components/rules/config/rule-config-action.js" group="rules"/>
    <@script src="${url.context}/res/components/rules/rule-details.js" group="rules"/>
    <!--Custom javascript file include for detail mode -->
-   <@script type="text/javascript" src="${url.context}/res/components/someco/rules/config/rule-config-action-custom.js" group="rules_custom"></@script>
+   <@script type="text/javascript" src="techtest-share/src/main/resources/META-INF/resources/components.almazon.rules.config/rule-config-action-custom.js" group="rules_custom"></@script>
 </@>
 
 <@markup id="widgets">
