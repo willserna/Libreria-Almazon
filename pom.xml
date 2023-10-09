@@ -444,9 +444,7 @@
                  NOTE: It defaults to the latest version this SDK pom has been tested with,
                        but alfresco version can/should be overridden in your project's pom
             -->
-                                          
-      
-      
+
       
       
       <dependency>

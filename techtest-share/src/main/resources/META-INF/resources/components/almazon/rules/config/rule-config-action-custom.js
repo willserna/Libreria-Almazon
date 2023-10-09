@@ -1,11 +1,16 @@
+
 if (typeof Almazon == "undefined" || !Almazon)
 {
    var Almazon = {};
+
 }
+
+//var Almazon = {};
 
 /**
  * RuleConfigActionCustom.
-
+ * @namespace Almazon
+ * @class Almazon.RuleConfigActionCustom
  */
 (function()
 {
@@ -13,6 +18,7 @@ if (typeof Almazon == "undefined" || !Almazon)
    /**
     * YUI Library aliases
     */
+   console.log("custom menu box")
    var Dom = YAHOO.util.Dom,
       Selector = YAHOO.util.Selector,
       Event = YAHOO.util.Event;

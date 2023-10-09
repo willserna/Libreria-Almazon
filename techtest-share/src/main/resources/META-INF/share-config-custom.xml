@@ -422,6 +422,7 @@
             <visible>
                 <aspect name="al:webable" />
                 <aspect name="al:productRelated" />
+
             </visible>
 
             <!-- Aspects that a user can add. Same as "visible" if left empty -->
@@ -432,12 +433,6 @@
             <removeable>
             </removeable>
         </aspects>
-        <types>
-            <type name="cm:content">
-                <subtype name="al:doc" />
-            </type>
-
-        </types>
         <aspects>
             <!-- Aspects that a user can see -->
             <visible>
@@ -452,6 +447,12 @@
             <removeable>
             </removeable>
         </aspects>
+        <types>
+            <type name="cm:content">
+                <subtype name="al:doc" />
+            </type>
+        </types>
+
     <config evaluator="node-type" condition="cm:content">
         <forms>
         <!-- Default form configuration for the cm:content type -->

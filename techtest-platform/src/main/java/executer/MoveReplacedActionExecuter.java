@@ -48,7 +48,7 @@ public class MoveReplacedActionExecuter extends ActionExecuterAbstractBase {
 
                 NodeRef targetNodeRef = assocNode.getTargetRef();
 
-                if (this.nodeService.exists(targetNodeRef) == true) {
+                if (this.nodeService.exists(targetNodeRef)) {
                     try {
                         fileFolderService.move(targetNodeRef, destinationParent, null);
                     } catch (FileNotFoundException e) {

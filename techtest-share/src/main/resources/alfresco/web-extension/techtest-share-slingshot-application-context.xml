@@ -14,7 +14,7 @@
    -->
 
    <!-- Add module specific messages and labels -->
-   <bean id="${project.artifactId}_resources"
+   <bean id="$com.techtest.techtest-share.resources"
          class="org.springframework.extensions.surf.util.ResourceBundleBootstrapComponent">
       <property name="resourceBundles">
          <list>
